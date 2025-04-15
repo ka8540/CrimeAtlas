@@ -1,0 +1,41 @@
+
+.search-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    margin-bottom: 20px; 
+    margin-top: 20px;
+}
+
+.search-controls input {
+    width: 300px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-controls button {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-controls button:hover {
+    background-color: #003d82;
+}
+
+.map-container1 {
+    width: 90%; 
+    max-width: 1500px; 
+    height: 380px; 
+    margin: 0 auto; 
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+

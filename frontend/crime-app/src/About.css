@@ -1,0 +1,97 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.about-page {
+  min-height: 100vh;
+  width: 100%;
+  padding: 30px 60px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: left;
+}
+
+.about-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #222;
+}
+
+.about-intro {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.about-subtitle {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #0056b3;
+}
+
+.about-page section {
+  border-top: 1px solid #ddd;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
+.about-page p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.data-glossary {
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  overflow-x: auto;
+  padding: 16px;
+}
+
+.data-glossary table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.data-glossary th,
+.data-glossary td {
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.data-glossary th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.credits-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.credits-list li::before {
+  content: "👤 ";
+  margin-right: 5px;
+}
+
+.about-toggle-container {
+  height: 24px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,139 @@
+/* Layout container */
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f4;
+    overflow: hidden;
+  }
+  
+  /* Logo Section (Left Side) */
+  .subContainer {
+    flex: 0.5; 
+    background-color: #1e1e1e;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .image {
+    width: 60%;
+    height: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 4px white);
+  }
+  
+  
+  .title-2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Login/Register Card (Right Side) */
+  .tabContainer {
+    flex: 1.5; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    max-width: 440px;
+    margin: auto;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  
+  /* Heading */
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+  
+  /* Style for Login/Register Tabs */
+  .MuiTab-root {
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #555;
+    background-color: #f4f4f4;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Active tab */
+  .MuiTab-root.Mui-selected {
+    background-color: #ff0000;
+    color: white !important;
+  }
+  
+  /* Remove underline */
+  .MuiTabs-indicator {
+    display: none;
+  }
+  
+  /* Add space between the tabs */
+  .MuiTabs-flexContainer {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  /* TextField spacing */
+  .MuiTextField-root {
+    margin-top: 14px;
+    width: 100%;
+  }
+  
+  /* Form Buttons */
+  .tabContainer button {
+    background-color: #ff0000 !important;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 22px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .tabContainer button:hover {
+    background-color: #cc0000 !important;
+    transform: scale(1.03);
+  }
+  
+  /* Error styling */
+  .tabContainer .error {
+    color: red;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 14px;
+  }
+  
+  /* Mobile View */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .subContainer {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .tabContainer {
+      width: 100%;
+      max-width: 90%;
+      padding: 2rem 1rem;
+    }
+  }
+  
